@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff1f5;
   color: #2b2421;
+ font-family: "Zalando Sans Expanded", sans-serif;
 }
 
 img {
@@ -46,7 +47,9 @@ a {
   background-color: #f5c0d0;
   color: #8f3346;
 }
-
+.Branding{color:#8f3346;
+font-weight: 1200;
+font-size: 25px;}
 .hero {
   display: flex;
   flex-wrap: wrap;
