@@ -50,7 +50,8 @@ a {
 .Branding{color:#8f3346;
 font-weight: 1200;
 font-size: 25px;}
-.hero {
+
+.hero, .text-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -98,10 +99,10 @@ font-size: 25px;}
   background-color: #ffffff;
   border: 1px solid #f1d7e1;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
   flex: 1 1 280px;
 }
-
+.info-card{margin-top: 15px;}
 .feature-card h2,
 .menu-card h2,
 .info-card h2,
@@ -109,6 +110,8 @@ font-size: 25px;}
 .menu-card h3 {
   margin: 0 0 12px 0;
 }
+
+
 
 .feature-card p,
 .menu-card p,
