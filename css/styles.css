@@ -1,22 +1,31 @@
 
+/* Base page styles: remove default margin and set main fonts/colors */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff1f5;
-  color: #2b2421;
- font-family: "Zalando Sans Expanded", sans-serif;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  background-color: #fff1f5;  
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+  max-width: 100%;  /* Ensures the image never gets wider than its container */
+  height: auto;     /* Keeps the image proportional so it doesn't look stretched */
 }
 
+
+/* Links should not have underlines and should match text color */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Top navbar section with logo and menu */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -26,31 +35,38 @@ a {
   border-bottom: 1px solid #f1d7e1;
 }
 
+/* Logo text style */
 .logo {
   font-weight: bold;
   font-size: 20px;
 }
 
+.Branding{color:#8f3346;
+font-weight: 1200;
+font-size: 25px;}
+
+/* Navigation menu items in a row */
 .navmenu {
   display: flex;
   gap: 10px;
 }
 
+/* Individual nav link style */
 .navlink {
   padding: 8px 12px;
   border-radius: 999px;
   color: #6f5c58;
 }
 
+/* Hover or active link gets a pink background */
 .navlink:hover,
 .navlink.active {
   background-color: #f5c0d0;
   color: #8f3346;
 }
-.Branding{color:#8f3346;
-font-weight: 1200;
-font-size: 25px;}
 
+
+/* Hero and text section layout uses flexbox */
 .hero, .text-section {
   display: flex;
   flex-wrap: wrap;
@@ -59,21 +75,25 @@ font-size: 25px;}
   padding: 40px 24px;
 }
 
+/* Keep the hero text from getting too wide */
 .hero-text {
   max-width: 520px;
 }
 
+/* Big heading style in the hero area */
 .hero-text h1 {
   margin: 0 0 16px 0;
   font-size: 36px;
   line-height: 1.1;
 }
 
+/* Small hero paragraph style */
 .hero-text p {
   margin: 0 0 20px 0;
   color: #6f5c58;
 }
 
+/* Rounded button style for calls to action */
 .button {
   display: inline-block;
   padding: 12px 22px;
@@ -82,6 +102,7 @@ font-size: 25px;}
   color: #ffffff;
 }
 
+/* Main content padding around page sections */
 .content {
   padding: 24px;
 }
@@ -102,7 +123,12 @@ font-size: 25px;}
   padding: 30px;
   flex: 1 1 280px;
 }
-.info-card{margin-top: 15px;}
+/* Extra top margin only for info cards */
+.info-card {
+  margin-top: 15px;
+}
+
+/* Heading spacing inside card blocks */
 .feature-card h2,
 .menu-card h2,
 .info-card h2,
@@ -111,8 +137,7 @@ font-size: 25px;}
   margin: 0 0 12px 0;
 }
 
-
-
+/* Paragraph styling inside cards and text sections */
 .feature-card p,
 .menu-card p,
 .info-card p,
@@ -122,38 +147,45 @@ font-size: 25px;}
   line-height: 1.7;
 }
 
+/* Page header is centered with space around it */
 .pagehead {
   padding: 24px;
   text-align: center;
 }
 
+/* Large heading inside the page header */
 .pagehead h1 {
   margin: 0 0 12px 0;
   font-size: 32px;
 }
 
+/* Subtitle under the page header heading */
 .pagehead p {
   margin: 0;
   color: #6f5c58;
   line-height: 1.7;
 }
 
+/* Contact section uses a row that wraps on smaller screens */
 .contact-grid {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
+/* Contact form fields are stacked vertically */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
+/* Form labels are bold so they stand out */
 .contact-form label {
   font-weight: bold;
 }
 
+/* Inputs and textarea get padding and rounded corners */
 .contact-form input,
 .contact-form textarea {
   padding: 10px;
@@ -161,17 +193,20 @@ font-size: 25px;}
   border-radius: 12px;
 }
 
+/* Focus outline when a user clicks into a form field */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: 2px solid #f5c0d0;
 }
 
+/* Card images span the full width inside their box */
 .card-image {
   width: 100%;
   border-radius: 16px;
   margin-bottom: 16px;
 }
 
+/* Footer area at the bottom of the page */
 .site-footer {
   padding: 24px;
   text-align: center;
